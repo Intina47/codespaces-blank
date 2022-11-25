@@ -37,7 +37,7 @@ CREATE TABLE Staff(
     Category VARCHAR(20),
     product_name VARCHAR(20) NOT NULL,
     product_image VARCHAR(100),
-    description VARCHAR(100),
+    product_description VARCHAR(100),
     manufacturer VARCHAR(100),
     retail_price DECIMAL(7,2),
     bulk_price DECIMAL(7,2)
@@ -68,7 +68,7 @@ CREATE TABLE Staff(
     FOREIGN KEY(Shift_ID) REFERENCES Shift(Shift_ID)
     
 );
-  CREATE TABLE User(
+  CREATE TABLE Users(
     User_ID int NOT NULL,
     First_Name varchar(70) NOT NULL,
     Second_Name varchar(35) NOT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE Staff(
     BillingAddress_ID int NOT NULL,
     Payment_ID int NOT NULL,
     PRIMARY KEY(ORDER_ID),
-    FOREIGN KEY(User_ID) REFERENCES User(User_ID),
+    FOREIGN KEY(User_ID) REFERENCES Users(User_ID),
     FOREIGN KEY(ShippingAddress_ID) REFERENCES ShippingAddress(ShippingAddress_ID),
     FOREIGN KEY(BillingAddress_ID) REFERENCES BillingAddress(BillingAddress_ID),
     FOREIGN KEY(Payment_ID) REFERENCES Payment(Payment_ID)

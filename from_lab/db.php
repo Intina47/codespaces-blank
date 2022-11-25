@@ -1,5 +1,3 @@
-//http://localhost/database/db.php
-//https://zeno.computing.dundee.ac.uk/2022-ac32006/isiahntina/createtbl.php
 <?php
 echo "Attempting database connection..";
 $host ="silva.computing.dundee.ac.uk";
@@ -15,8 +13,7 @@ try{
     echo "Sorry There was an error Executing query\n";
     echo $e->getMessage();
 }
-
-
-
-// Check connection
 ?>
+
+//http://localhost/database/db.php
+//https://zeno.computing.dundee.ac.uk/2022-ac32006/isiahntina/createtbl.php
