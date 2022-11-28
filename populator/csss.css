@@ -1,0 +1,22 @@
+h1,form{
+    text-align:center;
+  }
+  .menu {
+    width: 80%;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+  }
+.fpass{
+  border: none;
+  background-color: inherit;
+  padding: 0px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+.fpass:hover{
+  background-color: #eee;
+}
